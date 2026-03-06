@@ -2,8 +2,8 @@
 # 基本信息
 # -------------------------------
 title: Your Awesome Blog
-author: GitHub User
-email: your-email@domain.com
+author: Chenyi Zhu
+email: lanae_z@outlook.com/241098060@smail.nju.edu.cn
 description: > 
   Write an awesome description for your site here. 
   It will appear in meta tags for SEO.
@@ -24,7 +24,7 @@ plugins:
 
 # plainwhite 特定配置
 plainwhite:
-  name: Your Name
+  name: Chenyi Zhu
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   sitemap: true
@@ -37,8 +37,8 @@ plainwhite:
     - post
   social_links:
     twitter: your-twitter
-    github: your-github
-    linkedIn: your-linkedin
+    github: https://github.com/lanae-z
+    linkedIn: www.linkedin.com/in/晨奕-朱-1985a93b3
 
 # -------------------------------
 # Sass 配置
