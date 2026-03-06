@@ -1,61 +1,60 @@
-title: Your awesome title
+# -------------------------------
+# 基本信息
+# -------------------------------
+title: Your Awesome Blog
 author: GitHub User
 email: your-email@domain.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-show_excerpts: true # set to true to show excerpts on the homepage
+description: > 
+  Write an awesome description for your site here. 
+  It will appear in meta tags for SEO.
+show_excerpts: true
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
+# -------------------------------
+# 主题配置
+# -------------------------------
+# 使用 remote_theme 方式，最简单，兼容 GitHub Pages
+remote_theme: samarsault/plainwhite-jekyll
+plugins:
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# 如果你希望用本地主题 gem，则改成：
+# theme: plainwhite
+# 并在 Gemfile 里确保 gem "plainwhite" 已安装
+
+# plainwhite 特定配置
 plainwhite:
-  name: Adam Denisov
+  name: Your Name
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
-  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  sitemap: true
+  search: true
+  dark_mode: true
+  portfolio_image: "assets/portfolio.png"
+  html_lang: "en"
   condensed_mobile:
-    #- home
     - page
     - post
-  # generate social links in footer
   social_links:
-    twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
-    #dribbble: jekyll
-    #flickr:   jekyll
-    #instagram: jekyll
-    #pinterest: jekyll
-    #youtube: jekyll
-    #facebook: jekyll
-    #soundcloud: jekyll
-    #telegram: jekyll
-    #gitlab: jekyll
-    #email: jekyll
+    twitter: your-twitter
+    github: your-github
+    linkedIn: your-linkedin
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+# -------------------------------
+# Sass 配置
+# -------------------------------
+sass:
+  sass_dir: _sass
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
+# -------------------------------
+# 页面头部链接（可选）
+# -------------------------------
 #header_pages:
 # - about.md
 
-# Build settings
-theme: plainwhite
-
-plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
-remote_theme: samarsault/plainwhite-jekyll
+# -------------------------------
+# 构建设置
+# -------------------------------
+# 如果使用本地主题 gem，这里保持 theme: plainwhite
+# 如果使用 remote_theme，则不需要 theme
+#theme: plainwhite
