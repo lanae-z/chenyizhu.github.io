@@ -1,2 +1,2 @@
-# chenyihzhu.github.io
+# chenyizhu.github.io
 Personal blog
